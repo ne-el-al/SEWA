@@ -21,8 +21,10 @@ footer #container {
   width: 100%;
 }
 /* Class Contact */
-.contact p {
+.contact p, h3 {
   margin: 0.5rem 0;
+  display: block;
+  font-style: normal;
 }
 /* Class Pages */
 .pages {
