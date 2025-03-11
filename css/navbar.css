@@ -57,6 +57,26 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
+.logsing-menu {
+  position: fixed;
+  left: 50%;
+  top: -50%;
+  text-align: center;
+  width: 10em;
+  z-index: 999;
+}
+
+.logsing-menu.active {
+  top: 6em;
+  transition: 1s ease;
+}
+.logsing-item {
+  padding: 0.7em;
+  margin: 0.2em;
+  background-color: #202523;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -81,7 +101,7 @@ a {
     background-color: #262626;
     width: 100%;
     text-align: center;
-    transition: 0.5s;
+    transition: 1s;
   }
   .nav-item {
     margin: 1em 0;
