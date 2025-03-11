@@ -60,7 +60,7 @@ a {
 
 .logsing-menu {
   position: fixed;
-  left: 50%;
+  right: 2%;
   top: -50%;
   text-align: center;
   width: 10em;
