@@ -116,9 +116,21 @@ body {
 /* PROCESS */
 #process {
   margin-bottom: 1em;
+
   box-sizing: border-box;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
+#process h1 {
+  font-size: 2em;
+  margin: 0.7em 0;
+}
+#process i {
+  font-size: 2em;
+}
+
 .process_container {
   display: flex;
   justify-content: flex-start;
@@ -133,7 +145,6 @@ body {
 
 .process_container .process {
   width: 50%;
-
   margin: 1em 0;
   position: relative;
   display: inline-block;
