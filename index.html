@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -98,6 +100,174 @@
           <a href="about.html" class="button_dark">More</a>
         </div>
       </article>
+      <!-- Gallery for portrait and family photo -->
+      <aside id="home_gallery">
+        <div class="home_gallery_container">
+          <div class="portrait">
+            <h2>Portrait</h2>
+            <div class="portrait_photo">
+              <img src="./media/DSC01061.jpg" alt="" />
+              <img src="./media/DSC01073.jpg" alt="" />
+            </div>
+          </div>
+          <div class="family_photo">
+            <h2>Family Photoshots</h2>
+            <div class="family_photo">
+              <img src="./media/family2.jpg" alt="" />
+              <img src="./media/IMG_1501.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- PROCESS -->
+      <section id="process">
+        <div class="process_container">
+          <div class="process_1 process">
+            <i class="fa-solid fa-envelope"></i>
+            <p>1.Getting in Touch</p>
+            <span class="tooltip-text">
+              > The client reaches out via the website, social media, or phone.
+              <br />
+              > They receive information about services, pricing, and
+              availability.
+              <br />
+              > An initial consultation is conducted based on the client's
+              needs.</span
+            >
+          </div>
+          <div class="process_2 process">
+            <i class="fa-solid fa-briefcase"></i>
+            <p>2.Brief & Planning</p>
+            <span class="tooltip-text">
+              > The type of shoot is determined (wedding, family, portrait,
+              product photography, etc.). <br />
+              > The shooting concept, location, date, and time are planned.
+              <br />
+              > The client’s expectations and special requests are noted.
+            </span>
+          </div>
+          <div class="process_3 process">
+            <i class="fa-solid fa-credit-card"></i>
+            <p>3. Deposit / Prepayment:</p>
+            <span class="tooltip-text">
+              > The booking is confirmed. <br />
+              > A contract is signed to finalize the payment plan and
+              cancellation policies.
+            </span>
+          </div>
+          <div class="process_4 process">
+            <i class="fa-solid fa-camera"></i>
+            <p>4. Preparation & Shooting:</p>
+            <span class="tooltip-text">
+              > Equipment and lighting are set up. <br />
+              > A comfortable atmosphere is created for the client. <br />
+              > Guidance on posing and direction is provided during the shoot.
+            </span>
+          </div>
+          <div class="process_5 process">
+            <i class="fa-solid fa-check-double"></i>
+            <p>5. Selection & Retouching</p>
+            <span class="tooltip-text">
+              > The best photos are selected and previewed for the client.
+              <br />
+              > Color correction, lighting adjustments, retouching, and other
+              editsare applied. <br />
+              > Custom editing is done based on the client'spreferences.
+            </span>
+          </div>
+          <div class="process_6 process">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <p>6.Photo Delivery</p>
+            <span class="tooltip-text"
+              >> Photos are provided in digital or printed format. <br />
+              > Options include an online gallery, USB drive, or printed album.
+              <br />
+              > A password-protected client gallery can be created on the
+              website.</span
+            >
+          </div>
+          <div class="process_7 process">
+            <i class="fa-solid fa-hashtag"></i>
+            <p>7.Additional Services</p>
+            <span class="tooltip-text"
+              >> Social media-optimized images. <br />
+              > Custom prints, framed photos, or album design. <br />
+              > Extra retouching or additional photoshoots.</span
+            >
+          </div>
+          <div class="process_8 process">
+            <i class="fa-solid fa-comment"></i>
+            <p>8.Feedback & Communication</p>
+            <span class="tooltip-text"
+              >> Follow-up communication is maintained for feedback. <br />
+              > Clients are encouraged to leave reviews or referrals. <br />
+              > Future collaboration opportunities are explored.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOK BUTTON -->
+      <section id="book">
+        <div class="book">
+          <a href="/booking.html">Book</a>
+        </div>
+      </section>
+      <!-- FORM SECTION -->
+      <div id="form">
+        <div class="form_container">
+          <form action="submit.php" method="post" class="form">
+            <ul>
+              <li>
+                <h2>
+                  If you wan to find out more , contact me with form below:
+                </h2>
+              </li>
+              <li>
+                <label for="name">First Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your First Name"
+                />
+              </li>
+              <li>
+                <label for="name">Last Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Last Name"
+                />
+              </li>
+              <li>
+                <h3>Contact By</h3>
+              </li>
+              <li>
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter Your Number"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                />
+              </li>
+            </ul>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
