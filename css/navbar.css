@@ -47,6 +47,7 @@
   text-align: center;
   width: 10em;
   z-index: 999;
+  transition: 1s;
 }
 
 .logsing-menu.active {
