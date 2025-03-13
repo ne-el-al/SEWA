@@ -1,0 +1,52 @@
+@media (min-width: 1200px) {
+  * {
+    font-size: 1rem;
+  }
+  /* NAVBAR */
+  #navbar {
+    justify-content: space-around;
+  }
+  /* ABOUT */
+  #about {
+    justify-content: space-evenly;
+  }
+  #about img {
+    width: 18em;
+  }
+  .about_her {
+    width: 40%;
+  }
+
+  /* Gallery for portrait and family photo */
+  .home_gallery_container h2 {
+    font-family: 2.4em;
+  }
+  .home_gallery_container .desktop {
+    display: inline;
+  }
+  .home_gallery_container .tablet {
+    display: inline;
+  }
+  .home_gallery_container img {
+    margin: 0.6em 1.5em;
+    width: 15em;
+    height: 350px;
+  }
+  /* PROCESS  */
+  #process {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+  }
+
+  #process h1 {
+    margin: 1em 2em;
+  }
+  /* Footer */
+  aside .footer-menu {
+    display: flex;
+  }
+  aside .footer-item {
+    margin: 1em 1.5em;
+  }
+}

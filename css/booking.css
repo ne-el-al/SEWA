@@ -1,0 +1,60 @@
+main {
+  height: 100%;
+  display: flex;
+}
+.booking_container {
+  display: flex;
+
+  margin: 2em auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+hr {
+  margin: 1em 0;
+  color: #e5989b;
+  border: 1px solid #e5989b;
+  opacity: 0.2;
+}
+.booking_container h1 {
+  color: #e5989b;
+  text-align: center;
+  font-size: 2.6em;
+  text-shadow: 1px 1px black;
+  letter-spacing: 0.4em;
+  margin: 0.6em;
+}
+.form {
+  margin: auto;
+}
+.location {
+  display: flex;
+  justify-content: baseline;
+}
+.location label {
+  width: 50%;
+}
+.photoshot {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.button_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  width: 70%;
+}
+p {
+  margin: 1em 0;
+}

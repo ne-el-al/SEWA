@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6em;
+  }
+  p,
+  a {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+
+  /* ABOUT */
+  #about img {
+    width: 16em;
+  }
+
+  .home_gallery_container .tablet {
+    display: inline;
+  }
+  /* Footer */
+  aside .footer-menu {
+    display: flex;
+  }
+  aside .footer-item {
+    margin: 1em 1.5em;
+  }
+}

@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+header {
+  background-color: #202523;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 
 html,
@@ -104,6 +118,13 @@ body {
   background-color: #f5efff;
   margin-bottom: 1em;
 }
+.home_gallery_container .tablet {
+  display: none;
+}
+.home_gallery_container .desktop {
+  display: none;
+}
+
 .home_gallery_container img {
   width: 15em;
   height: 250px;
@@ -116,7 +137,6 @@ body {
 /* PROCESS */
 #process {
   margin-bottom: 1em;
-
   box-sizing: border-box;
   flex-wrap: wrap;
   display: flex;
