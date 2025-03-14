@@ -71,62 +71,63 @@
     <!--Booking form-->
     <main>
       <div class="booking_container">
-        <aside class="form"> 
+        <aside class="form">
           <form action="">
             <h1>Booking</h1>
             <!-- Prefered date -->
-            <div class="date">
-              <label for="">Prefered date</label>
-              <input type="date" name="date_book" id="date_book" required />
-            </div>
-            <hr />
-            <!-- Prefered time -->
-            <div class="time">
-              <label for="">Prefered time</label>
-              <input type="time" name="date_book" id="date_book" required />
-            </div>
-            <hr />
-            <!-- Location-->
-            <div class="location">
-              <label for="">Location</label>
-              <select name="location_book" id="location_book" required>
-                <option value="Dublin">Dublin</option>
-                <option value="Cork">Cork</option>
-                <option value="Limerick">Limerick</option>
-              </select>
-            </div>
-            <hr />
-            <!-- Type of photoshoot-->
-            <div class="photoshot">
-              <div class="text"><h4>Type of a photoshoot</h4></div>
-              <div class="checkbox">
-                <label for="portrait">Portrait</label>
-                <input
-                  type="checkbox"
-                  name="portrait"
-                  id="portrait"
-                  value="portrait"
-                />
-                <label for="family">Family</label>
-                <input
-                  type="checkbox"
-                  name="family"
-                  id="family"
-                  value="family"
-                />
-              </div>
-            </div>
-            <hr />
-            <!-- User's message to the photographer -->
-            <div class="message">
-              <label for="book_message">Your message</label>
-              <textarea
-                name="message"
-                id="book_message"
-                style="width: 100%; height: 6em"
-              ></textarea>
-            </div>
-
+            <ul>
+              <li class="date">
+                <label for="">Prefered date</label>
+                <input type="date" name="date_book" id="date_book" required />
+              </li>
+              <hr />
+              <!-- Prefered time -->
+              <li class="time">
+                <label for="">Prefered time</label>
+                <input type="time" name="date_book" id="date_book" required />
+              </li>
+              <hr />
+              <!-- Location-->
+              <li class="location">
+                <label for="">Location</label>
+                <select name="location_book" id="location_book" required>
+                  <option value="Dublin">Dublin</option>
+                  <option value="Cork">Cork</option>
+                  <option value="Limerick">Limerick</option>
+                </select>
+              </li>
+              <hr />
+              <!-- Type of photoshoot-->
+              <li class="photoshot">
+                <div class="text"><h4>Type of a photoshoot</h4></div>
+                <div class="checkbox">
+                  <label for="portrait">Portrait</label>
+                  <input
+                    type="checkbox"
+                    name="portrait"
+                    id="portrait"
+                    value="portrait"
+                  />
+                  <label for="family">Family</label>
+                  <input
+                    type="checkbox"
+                    name="family"
+                    id="family"
+                    value="family"
+                  />
+                </div>
+              </li>
+              <hr />
+              <!-- User's message to the photographer -->
+              <li class="message">
+                <label for="book_message">Your message</label>
+                <textarea
+                  name="message"
+                  id="book_message"
+                  style="width: 100%; height: 6em"
+                ></textarea>
+              </li>
+            </ul>
             <section class="button_area">
               <p>
                 Your preferred date and time may not fit into my timetable, so I

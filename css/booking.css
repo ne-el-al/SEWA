@@ -47,6 +47,7 @@ hr {
   align-items: center;
   justify-content: baseline;
 }
+
 .button_area {
   display: flex;
   flex-direction: column;

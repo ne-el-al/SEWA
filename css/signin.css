@@ -1,0 +1,136 @@
+main {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  height: 100vh;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.signin_container {
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #8ff8a8;
+  text-shadow: 2px 2px black;
+}
+h3 {
+  margin: 1em 0;
+}
+input {
+  width: 100%;
+  padding: 1em;
+  margin: 1.2em auto;
+  border: none;
+  border-bottom: 1px solid #e5989b;
+  outline: none;
+  background-color: #faf9f9;
+  border-radius: 0.5em;
+}
+.input-place {
+  position: relative;
+}
+.input-place i {
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  color: #e5989b;
+  transform: translateY(-50%);
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.socialmedia li:nth-child(1) {
+  margin: 1em 0;
+  padding: 0.6em;
+  border: 1px solid #e5989b;
+  border-radius: 50%;
+  color: #e5989b;
+}
+.socialmedia li:nth-child(2) {
+  margin: 1em 0;
+  padding: 0.6em 0.8em;
+  border: 1px solid #e5989b;
+  border-radius: 50%;
+  color: #e5989b;
+}
+.socialmedia i {
+  font-size: 1.4em;
+  cursor: pointer;
+}
+button {
+  font-size: 1.2em;
+  width: 100%;
+  padding: 10px;
+  margin: 0.6em 0;
+  background: #e5989b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.side_container {
+  padding: 1em 0;
+  background-color: #f5efff;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeout 1s ease-in-out;
+}
+.side_container h2 {
+  font-size: 1.8em;
+}
+.side_container p {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1.5em;
+}
+.side_container .button {
+  font-size: 1.2em;
+  width: 70%;
+  border-radius: 1em;
+  text-align: center;
+  color: white;
+  padding: 0.6em 0.8em;
+  background-color: #e5989b;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

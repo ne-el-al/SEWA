@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <!--Css -->
+    <link rel="stylesheet" href="./css/signin.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -70,63 +71,41 @@
       </nav>
     </header>
 
-    <!-- Sign In form -->
-    <form action="#" class="form" name="sign_in_form">
-      <h1>Sign in</h1>
-      <!-- First name -->
-      <label for="first_name_sign">First name</label>
-      <input
-        type="text"
-        name="first_name"
-        id="first_name_sign"
-        required
-        placeholder=""
-      />
-      <br />
+    <main>
+      <aside class="side_container">
+        <h2>Hello , Welcome</h2>
+        <p>Do you have account already !</p>
+        <a href="login.html" class="fade-link button">Log In</a>
+      </aside>
+      <section class="signin_container">
+        <h2>Sing In</h2>
+        <ul>
+          <li class="input-place">
+            <input type="text" placeholder="UserName" required />
+            <i class="fa-solid fa-user"></i>
+            </i>
+          </li>
+          <li class="input-place">
+            <input type="email" placeholder="Email" required /><i class="fa-solid fa-envelope">
+            </i>
+          </li>
+          <li class="input-place">
+            <input type="password" placeholder="Password" required />
+            <i class="fa-solid fa-lock"></i>
+          </li>
+        </ul>
+        <button>Sign in</button>
 
-      <!-- Last name -->
-      <label for="last_name_sign">Last name</label>
-      <input
-        type="text"
-        name="last_name"
-        id="last_name_sign"
-        required
-        placeholder=""
-      />
-      <br />
-
-      <!-- Phone -->
-      <label for="phone_sign">Phone number</label>
-      <input type="tel" name="phone" id="phone_sign" required placeholder="" />
-      <br />
-
-      <!-- E-mail -->
-      <label for="email_sign">E-mail</label>
-      <input
-        type="email"
-        name="email"
-        id="email_sign"
-        required
-        placeholder=""
-        pattern=""
-      />
-      <br />
-
-      <!-- Password -->
-      <label for="pass_sign">Password</label>
-      <input
-        type="password"
-        name="pass"
-        id="pass_sign"
-        required
-        placeholder=""
-      />
-      <br />
-
-      <!-- Sign in button -->
-      <input type="submit" value="Sign in" />
-      <br />
-    </form>
+        <a href="#">Forgot my Password!</a>
+        <h3>Sign in with Social Media</h3>
+        <ul class="socialmedia">
+          <li>
+            <i class="fa-brands fa-google"></i>
+          </li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+        </ul>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
