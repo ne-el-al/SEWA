@@ -1,14 +1,21 @@
+
 #navbar {
+  
   min-height: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
+  box-shadow: 1px 1px #795757;
+  background-color: #d5c8b0;
 }
 #navbar img {
   width: 5em;
+  box-shadow: #795757 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin-top: 8px;
   border-radius: 100%;
 }
+
 .nav-menu {
   display: flex;
   justify-content: space-evenly;
@@ -21,6 +28,8 @@
 
 .nav-link {
   transition: 0.7s ease;
+  color: #795757
+  font-size: 1.2em;
 }
 
 .account i {
@@ -37,7 +46,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #795757;
 }
 
 .logsing-menu {
@@ -57,7 +66,7 @@
 .logsing-item {
   padding: 0.7em;
   margin: 0.2em;
-  background-color: #202523;
+  background-color: #d5c8b0;
 }
 
 @media (max-width: 768px) {
@@ -75,13 +84,14 @@
     transform: translateY(-0.7rem) rotate(-45deg);
   }
   .nav-menu {
+    font-size: 1.2em;
     z-index: 999;
     position: fixed;
     left: -100%;
     top: 6em;
     gap: 0;
     flex-direction: column;
-    background-color: #262626;
+    background-color: #d5c8b0;
     width: 100%;
     text-align: center;
     transition: 1s;

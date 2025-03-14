@@ -49,4 +49,7 @@
   aside .footer-item {
     margin: 1em 1.5em;
   }
+  #navbar img {
+    width: 7em;
+  }
 }
