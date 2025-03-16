@@ -66,14 +66,13 @@ fieldset.photoshoot > legend {
 textarea {
   width: 100%; /* Sets width to the full size of the page*/
   height: 6em; /* Sets bigger height */
-  border-color: #e5989b;
+  border-color: #e5989b; /* Sets border color to pink */
 }
 
 .button-area {
   display: flex; /* Enables flexbox */
   flex-direction: column; /* Stacks buttons vertically */
   align-items: center; /* Centers buttons horizontally */
-  justify-content: center;
 }
 
 button {
