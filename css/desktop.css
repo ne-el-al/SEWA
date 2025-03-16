@@ -62,6 +62,9 @@
     margin: 1em 2em; /* Adds spacing around process heading */
   }
 
+  .form input {
+    width: 50%; /* Makes input fields take half of the width */
+  }
   /* FOOTER */
   aside .footer-menu {
     display: flex; /* Ensures footer menu is displayed in a row */
@@ -85,9 +88,9 @@
     animation: all 2s ease-in; /* Adds animation effect */
   }
 
-  .login_container,
-  .side_container,
-  .signin_container {
+.auth_container,
+.side_container
+   {
     width: 40%; /* Reduces width for better alignment */
     margin: 2em 0.5em; /* Adds spacing */
     padding: 1em; /* Adds padding inside */

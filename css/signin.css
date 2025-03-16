@@ -7,17 +7,6 @@ main {
   background: #f4f4f4; /* Sets background color to light gray */
 }
 
-.signin_container {
-  width: 95%; /* Takes up 95% of the available width */
-  margin: 1em auto; /* Centers the container with top and bottom margin */
-  padding: 3em; /* Adds padding inside the container */
-  background: white; /* Sets background color to white */
-  border-radius: 10px; /* Rounds the container corners */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
-  text-align: center; /* Centers text inside */
-  animation: fadein 1s ease-in-out; /* Applies fade-in animation */
-}
-
 h2 {
   font-size: 2.5em; /* Sets heading size */
   color: #8ff8a8; /* Sets text color to light green */

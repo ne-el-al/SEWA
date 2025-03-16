@@ -1,13 +1,11 @@
 main {
-  width: 100%; /* Full width of the page */
   display: flex; /* Enables flexbox layout */
   flex-direction: column; /* Stacks child elements vertically */
   justify-content: flex-start; /* Aligns content at the top */
   align-items: baseline; /* Aligns content to the text baseline */
-  background: #f4f4f4; /* Light gray background */
 }
 
-.login_container {
+.auth_container {
   font-size: 1.2em; /* Sets text size */
   width: 95%; /* Takes up 95% of available width */
   margin: 0.5em auto; /* Centers container with top-bottom margin */
@@ -19,15 +17,11 @@ main {
   animation: fadeIn 1s ease-in-out; /* Adds fade-in animation */
 }
 
-h2 {
+.auth_container h1 {
   margin-bottom: 1em; /* Adds bottom spacing */
-  font-size: 2.5em; /* Sets heading size */
-  color: #8ff8a8; /* Light green text */
+  font-size: 2em; /* Sets heading size */
+  color: #e5989b; /* Light green text */
   text-shadow: 2px 2px black; /* Black text shadow */
-}
-
-h3 {
-  margin: 1em 0; /* Adds vertical spacing */
 }
 
 input {
@@ -60,41 +54,36 @@ input {
   flex-direction: row; /* Aligns items in a row */
 }
 
-.socialmedia li:nth-child(1) {
-  margin: 1em 0; /* Adds vertical spacing */
-  padding: 0.6em; /* Adds padding */
-  border: 1px solid #e5989b; /* Pink border */
-  border-radius: 50%; /* Circular shape */
-  color: #e5989b; /* Pink icon color */
-}
-
-.socialmedia li:nth-child(2) {
-  margin: 1em 0; /* Adds vertical spacing */
-  padding: 0.6em 0.8em; /* Adds padding */
-  border: 1px solid #e5989b; /* Pink border */
-  border-radius: 50%; /* Circular shape */
-  color: #e5989b; /* Pink icon color */
-}
-
 .socialmedia i {
+  margin: 1em 0; /* Adds vertical spacing */
+  border: 1px solid #e5989b; /* Pink border */
+  border-radius: 50%; /* Circular shape */
+  color: #e5989b; /* Pink icon color */
   font-size: 1.4em; /* Sets icon size */
   cursor: pointer; /* Changes cursor to pointer */
 }
 
+.socialmedia i:nth-child(1) {
+  padding: 0.6em; /* Adds padding */
+}
+
+/* Separate padding for Facebook logo, because otherwise borders are oval */
+.socialmedia i:nth-child(2) {
+  padding: 0.6em 0.8em; /* Adds padding */
+}
+
 button {
-  font-size: 1.1em; /* Sets button text size */
-  width: 100%; /* Full width button */
-  padding: 10px; /* Adds padding */
-  margin: 0.6em 0; /* Adds vertical spacing */
-  background: #e5989b; /* Pink background */
-  color: white; /* White text */
-  border: none; /* Removes border */
-  border-radius: 5px; /* Rounds corners */
+  margin: 1em 0; /* Adds vertical spacing */
+  background-color: #e5989b; /* Sets background color to light pink */
+  padding: 1em 3em; /* Adds padding inside the button */
+  border: 1px solid transparent; /* Removes border */
+  border-radius: 4em; /* Rounds the button edges */
+  color: white; /* Sets text color to white*/
   cursor: pointer; /* Changes cursor to pointer */
+  transition: 0.5s ease; /* Adds smooth transition effect */
 }
 
 .side_container {
-  background-color: #f5efff; /* Light purple background */
   display: flex; /* Enables flexbox */
   width: 95%; /* Takes up 95% of available width */
   border-radius: 1em; /* Rounds corners */
@@ -107,7 +96,9 @@ button {
   animation: fadeOut 1s ease-in-out; /* Adds fade-out animation */
 }
 
-.side_container h2 {
+.side_container h1 {
+  color: #e5989b; /* Light green text */
+  text-shadow: 2px 2px black; /* Black text shadow */
   font-size: 1.8em; /* Sets heading size */
 }
 
@@ -117,15 +108,7 @@ button {
   margin: 1.5em; /* Adds spacing */
 }
 
-.side_container .button {
-  font-size: 1.1em; /* Sets button text size */
-  width: 70%; /* Button takes up 70% of container width */
-  border-radius: 1em; /* Rounds button edges */
-  text-align: center; /* Centers text */
-  color: white; /* White text */
-  padding: 0.6em 0.8em; /* Adds padding */
-  background-color: #e5989b; /* Pink background */
-}
+
 
 /* FADE-OUT ANIMATION */
 @keyframes fadeOut {
