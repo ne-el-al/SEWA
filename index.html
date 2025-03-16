@@ -1,141 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <!--Css -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <header>
-      <nav id="navbar">
-        <a href="index.html" class="nav-branding" target="_blank"
-          ><img src="./media/logo.webp" alt=""
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="booking.html" class="nav-link">Book</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="service.html" class="nav-link">Service</a>
-          </li>
-          <li class="nav-item">
-            <a href="gallery.html" class="nav-link">Gallery</a>
-          </li>
-        </ul>
+  <!--Css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/tablet.css" />
+  <link rel="stylesheet" href="./css/desktop.css" />
+</head>
 
-        <section class="account">
-          <a href="#" class="nav-link user"
-            ><i class="fa-regular fa-user"></i
-          ></a>
-        </section>
-        <ul class="logsing-menu">
-          <li class="logsing-item"><a href="login.html">Log In</a></li>
-          <li class="logsing-item"><a href="signin.html">Sign In</a></li>
-        </ul>
-        <aside class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </aside>
-      </nav>
-    </header>
-    <!-- MAIN SECTION -->
-    <main>
-      <!-- Swiper -->
-      <section class="photo_container swiper">
-        <div class="slider_wrapper">
-          <div class="card_list swiper-wrapper">
-            <div class="card_item swiper-slide">
-              <img src="./media/IMG_0503-1-2.jpg" alt="" class="image" />
-            </div>
-            <div class="card_item swiper-slide">
-              <img src="./media/IMG_1490.jpg" alt="" class="image" />
-            </div>
-            <div class="card_item swiper-slide">
-              <img src="./media/IMG_1678-Edit.jpg" alt="" class="image" />
-            </div>
-            <div class="card_item swiper-slide">
-              <img src="./media/Eduard final.jpg" alt="" class="image" />
-            </div>
-          </div>
-        </div>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav id="navbar">
+      <a href="index.html" class="nav-branding" target="_blank"><img src="./media/logo.webp" alt="" /></a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="booking.html" class="nav-link">Book</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="service.html" class="nav-link">Service</a>
+        </li>
+        <li class="nav-item">
+          <a href="gallery.html" class="nav-link">Gallery</a>
+        </li>
+      </ul>
+
+      <section class="account">
+        <a href="#" class="nav-link user"><i class="fa-regular fa-user"></i></a>
       </section>
-      <!-- About -->
-      <article id="about">
-        <img src="./media/profile.jpg" alt="" />
-
-        <div class="about_her">
-          <h1>Hello, I'm <span>Ivana Tumbeva</span></h1>
-          <p>
-            I have been a family and portrait photographer for 5 years,
-            capturing genuine emotions and timeless moments. Since 2020, I have
-            been studying photography at Griffith College Dublin, continuously
-            refining my skills and artistic vision.
-          </p>
-          <a href="about.html" class="button_dark">More</a>
-        </div>
-      </article>
-      <!-- Gallery for portrait and family photo -->
-      <aside id="home_gallery">
-        <div class="home_gallery_container">
-          <div class="portrait">
-            <h2>Portrait</h2>
-            <div class="portrait_photo">
-              <img src="./media/DSC01061.jpg" alt="" />
-              <img src="./media/DSC01073.jpg" alt="" />
-              <img class="desktop tablet" src="./media/portrait1.jpg" alt="" />
-              <img class="desktop tablet" src="./media/portrait.jpg" alt="" />
-              <img class="desktop" src="./media/portrait2.jpg" alt="" />
-              <img class="desktop" src="./media/portrait3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="family_photo">
-            <h2>Family Photoshots</h2>
-            <div class="family_photo">
-              <img src="./media/family2.jpg" alt="" />
-              <img src="./media/IMG_1501.jpg" alt="" />
-              <img class="desktop tablet" src="./media/family3.jpg" alt="" />
-              <img class="desktop tablet" src="./media/family.jpg" alt="" />
-              <img class="desktop" src="./media/family4.jpg" alt="" />
-              <img class="desktop" src="./media/family5.jpg" alt="" />
-            </div>
-          </div>
-        </div>
+      <ul class="logsing-menu">
+        <li class="logsing-item"><a href="login.html">Log In</a></li>
+        <li class="logsing-item"><a href="signin.html">Sign In</a></li>
+      </ul>
+      <aside class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </aside>
+    </nav>
+  </header>
+  <!-- MAIN SECTION -->
+  <main>
+    <!-- Swiper -->
+    <section class="photo_container swiper">
+      <div class="slider_wrapper">
+        <figure class="card_list swiper-wrapper">
+          <picture class="card_item swiper-slide">
+            <img src="./media/IMG_0503-1-2.jpg" alt="" class="image" />
+          </picture>
+          <picture class="card_item swiper-slide">
+            <img src="./media/IMG_1490.jpg" alt="" class="image" />
+          </picture>
+          <picture class="card_item swiper-slide">
+            <img src="./media/IMG_1678-Edit.jpg" alt="" class="image" />
+          </picture>
+          <picture class="card_item swiper-slide">
+            <img src="./media/Eduard final.jpg" alt="" class="image" />
+          </picture>
+        </figure>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <img src="./media/profile.jpg" alt="" />
+
+      <article class="about_her">
+        <h1>Hello, I'm <span>Ivana Tumbeva</span></h1>
+        <p>
+          I have been a family and portrait photographer for 5 years,
+          capturing genuine emotions and timeless moments. Since 2020, I have
+          been studying photography at Griffith College Dublin, continuously
+          refining my skills and artistic vision.
+        </p>
+        <a href="about.html" class="button_dark">More</a>
+      </article>
+    </section>
+    <!-- Gallery for portrait and family photo -->
+    <section"home_gallery">
+      <figure class="home_gallery_container">
+        <article class="portrait">
+          <h2>Portrait</h2>
+          <figure class="portrait_photo">
+            <img src="./media/DSC01061.jpg" alt="" />
+            <img src="./media/DSC01073.jpg" alt="" />
+            <img class="desktop tablet" src="./media/portrait1.jpg" alt="" />
+            <img class="desktop tablet" src="./media/portrait.jpg" alt="" />
+            <img class="desktop" src="./media/portrait2.jpg" alt="" />
+            <img class="desktop" src="./media/portrait3.jpg" alt="" />
+          </figure>
+        </article>
+        <article class="family_photo">
+          <h2>Family Photoshots</h2>
+          <figure class="family_photo">
+            <img src="./media/family2.jpg" alt="" />
+            <img src="./media/IMG_1501.jpg" alt="" />
+            <img class="desktop tablet" src="./media/family3.jpg" alt="" />
+            <img class="desktop tablet" src="./media/family.jpg" alt="" />
+            <img class="desktop" src="./media/family4.jpg" alt="" />
+            <img class="desktop" src="./media/family5.jpg" alt="" />
+          </figure>
+        </article>
+      </figure>
+      </section>
       <!-- PROCESS -->
       <section id="process">
         <i class="fa-solid fa-star" style="color: #ffd43b"></i>
         <h1>The Photography Journey</h1>
         <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-        <div class="process_container">
-          <div class="process_1 process">
+        <section class="process_container">
+          <details class="process_1 process">
             <i class="fa-solid fa-envelope"></i>
-            <p>1.Getting in Touch</p>
+            <summary>
+              <p>1.Getting in Touch</p>
+            </summary>
             <span class="tooltip-text">
               > The client reaches out via the website, social media, or phone.
               <br />
@@ -143,12 +137,13 @@
               availability.
               <br />
               > An initial consultation is conducted based on the client's
-              needs.</span
-            >
-          </div>
-          <div class="process_2 process">
+              needs.</span>
+          </details>
+          <details class="process_2 process">
             <i class="fa-solid fa-briefcase"></i>
-            <p>2.Brief & Planning</p>
+            <summary>
+              <p>2.Brief & Planning</p>
+            </summary>
             <span class="tooltip-text">
               > The type of shoot is determined (wedding, family, portrait,
               product photography, etc.). <br />
@@ -156,28 +151,34 @@
               <br />
               > The client’s expectations and special requests are noted.
             </span>
-          </div>
-          <div class="process_3 process">
+          </details>
+          <details class="process_3 process">
             <i class="fa-solid fa-credit-card"></i>
-            <p>3. Deposit / Prepayment:</p>
+            <summary>
+              <p>3. Deposit / Prepayment:</p>
+            </summary>
             <span class="tooltip-text">
               > The booking is confirmed. <br />
               > A contract is signed to finalize the payment plan and
               cancellation policies.
             </span>
-          </div>
-          <div class="process_4 process">
+          </details>
+          <details class="process_4 process">
             <i class="fa-solid fa-camera"></i>
-            <p>4. Preparation & Shooting:</p>
+            <summary>
+              <p>4. Preparation & Shooting:</p>
+            </summary>
             <span class="tooltip-text">
               > Equipment and lighting are set up. <br />
               > A comfortable atmosphere is created for the client. <br />
               > Guidance on posing and direction is provided during the shoot.
             </span>
-          </div>
-          <div class="process_5 process">
+          </details>
+          <details class="process_5 process">
             <i class="fa-solid fa-check-double"></i>
-            <p>5. Selection & Retouching</p>
+            <summary>
+              <p>5. Selection & Retouching</p>
+            </summary>
             <span class="tooltip-text">
               > The best photos are selected and previewed for the client.
               <br />
@@ -185,150 +186,111 @@
               editsare applied. <br />
               > Custom editing is done based on the client'spreferences.
             </span>
-          </div>
-          <div class="process_6 process">
+          </details>
+          <details class="process_6 process">
             <i class="fa-solid fa-truck-ramp-box"></i>
-            <p>6.Photo Delivery</p>
-            <span class="tooltip-text"
+            <summary>
+              <p>6.Photo Delivery</p>
+            </summary>
+            <span class="tooltip-text">
               >> Photos are provided in digital or printed format. <br />
               > Options include an online gallery, USB drive, or printed album.
               <br />
               > A password-protected client gallery can be created on the
-              website.</span
-            >
-          </div>
-          <div class="process_7 process">
+              website.</span>
+          </details>
+          <details class="process_7 process">
             <i class="fa-solid fa-hashtag"></i>
-            <p>7.Additional Services</p>
-            <span class="tooltip-text"
-              >> Social media-optimized images. <br />
+            <summary>
+              <p>7.Additional Services</p>
+            </summary>
+            <span class="tooltip-text">> Social media-optimized images. <br />
               > Custom prints, framed photos, or album design. <br />
-              > Extra retouching or additional photoshoots.</span
-            >
-          </div>
-          <div class="process_8 process">
+              > Extra retouching or additional photoshoots.</span>
+          </details>
+          <details class="process_8 process">
             <i class="fa-solid fa-comment"></i>
-            <p>8.Feedback & Communication</p>
-            <span class="tooltip-text"
-              >> Follow-up communication is maintained for feedback. <br />
+            <summary>
+              <p>8.Feedback & Communication</p>
+            </summary>
+            <span class="tooltip-text">> Follow-up communication is maintained for feedback. <br />
               > Clients are encouraged to leave reviews or referrals. <br />
-              > Future collaboration opportunities are explored.</span
-            >
-          </div>
-        </div>
+              > Future collaboration opportunities are explored.</span>
+          </details>
+        </section>
       </section>
 
       <!-- BOOK BUTTON -->
-      <section id="book">
-        <div class="book">
-          <a href="/booking.html">Book</a>
-        </div>
+      <section class="book">
+        <a href="/booking.html">Book</a>
       </section>
       <!-- FORM SECTION -->
       <div id="form">
         <div class="form_container">
           <form action="submit.php" method="post" class="form">
-            <ul>
-              <li>
-                <h2>
-                  If you wan to find out more , contact me with form below:
-                </h2>
-              </li>
-              <li>
-                <label for="name">First Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your First Name"
-                />
-              </li>
-              <li>
-                <label for="name">Last Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your Last Name"
-                />
-              </li>
-              <li>
-                <h3>Contact By</h3>
-              </li>
-              <li>
-                <label for="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Enter Your Number"
-                />
-              </li>
-              <li>
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter Your Email"
-                />
-              </li>
-            </ul>
+            <h2>
+              If you wan to find out more , contact me with form below:
+            </h2>
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your First Name" />
 
+            <label for="name">Last Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Last Name" />
+            <h3>Contact By</h3>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" />
             <button type="submit">Send</button>
           </form>
         </div>
       </div>
-    </main>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <div id="container">
-        <address class="contact">
-          <h3>Contact Me:</h3>
-          <p>+353 01 234 56 78</p>
-          <p>firs.last@domain.com</p>
-        </address>
-        <aside class="pages">
-          <ul class="footer-menu">
-            <li class="footer-item">
-              <a href="" class="footer-link">About Me</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Service</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Gallery</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Log in </a>
-            </li>
-          </ul>
-        </aside>
+  <!-- FOOTER -->
+  <footer>
+    <div id="container"> <!-- div is for grid-->
+      <address class="contact">
+        <h3>Contact Me:</h3>
+        <p>+353 01 234 56 78</p>
+        <p>firs.last@domain.com</p>
+      </address>
+      <article class="pages">
+        <nav class="footer-menu">
+          <li class="footer-item">
+            <a href="" class="footer-link">About Me</a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">Service</a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">Gallery</a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">Log in </a>
+          </li>
+        </nav>
+      </article>
+      <article class="footer-links">
+        <h3>Follow me:</h3>
         <section class="social-media">
-          <h3>Follow me:</h3>
-          <a
-            href="https://www.instagram.com/ivanatumbeva_photo/"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.facebook.com/ivana.tumbeva" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-
-          <div>
-            <a class="button_dark" href="booking.html">Book</a>
-          </div>
+          <a href="https://www.instagram.com/ivanatumbeva_photo/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ivana.tumbeva" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </section>
-      </div>
-      <section class="madeby">® Two Turk One Rus, 2025</section>
-    </footer>
+        <a class="button_dark" href="booking.html">Book</a>
+      </article>
+    </div>
+    <section class="madeby">® Two Turk One Rus, 2025</section>
+  </footer>
 
-    <!-- Script -->
-    <script src="./javascript/script.js"></script>
-    <!-- SwiperJS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Script -->
+  <script src="./javascript/script.js"></script>
+  <!-- SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="./javascript/swiper.js"></script>
-  </body>
+  <script src="./javascript/swiper.js"></script>
+</body>
+
 </html>

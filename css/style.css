@@ -243,12 +243,21 @@ Dark Button Styling
   transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
 }
 
+details > summary {
+  list-style-type: none; /* Disables default arrow of details tag */
+}
+
+/* Disables default arrow of details tag for Safari browser */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 .process:hover .tooltip-text {
   visibility: visible; /* Makes the tooltip visible */
   opacity: 1; /* Fully visible when hovered */
 }
 
-.process p {
+.process summary > p {
   font-size: 1.2em; /* Sets paragraph font size */
   font-weight: bold; /* Makes the text bold */
 }
@@ -261,7 +270,7 @@ Dark Button Styling
   margin: 0 0 1em 0; /* Adds bottom margin */
 }
 
-.book a {
+.book a{
   color: #3b3030; /* Sets text color to dark brown */
   padding: 1em 3em; /* Adds padding inside the button */
   background-color: #f5efff; /* Sets background color to light purple */
