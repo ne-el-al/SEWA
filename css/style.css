@@ -203,7 +203,9 @@ Dark Button Styling
   align-items: center; /* Aligns items vertically in the center */
   justify-content: space-evenly; /* Evenly distributes items with equal spacing */
 }
-
+.fa-star {
+  color: #ffd43b;
+}
 #process h1 {
   font-size: 2em; /* Sets the font size for the heading */
   margin: 0.7em 0; /* Adds vertical spacing */
