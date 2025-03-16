@@ -9,12 +9,6 @@ const swiper = new Swiper(".slider_wrapper", {
     disableOnInteraction: false, // Autoplay will NOT stop when the user interacts with the slider
   },
 
-  // Navigation arrows (next and previous buttons for manual navigation)
-  navigation: {
-    nextEl: ".swiper-button-next", // Specifies the element that will work as the "Next" button
-    prevEl: ".swiper-button-prev", // Specifies the element that will work as the "Previous" button
-  },
-
   // Responsive settings (different number of slides shown at different screen sizes)
   breakpoints: {
     0: {
