@@ -195,6 +195,15 @@ Dark Button Styling
 }
 
 /* PROCESS */
+hgroup {
+  display: flex;
+  flex-direction: row;
+}
+
+i.fa-star {
+  color: #ffd43b;
+}
+
 #process {
   margin-bottom: 1em; /* Adds space below the section */
   box-sizing: border-box; /* Ensures padding and border are included in the total size */
@@ -203,9 +212,7 @@ Dark Button Styling
   align-items: center; /* Aligns items vertically in the center */
   justify-content: space-evenly; /* Evenly distributes items with equal spacing */
 }
-.fa-star {
-  color: #ffd43b;
-}
+
 #process h1 {
   font-size: 2em; /* Sets the font size for the heading */
   margin: 0.7em 0; /* Adds vertical spacing */
@@ -250,7 +257,7 @@ Dark Button Styling
   opacity: 1; /* Fully visible when hovered */
 }
 
-.process p {
+.process summary > p {
   font-size: 1.2em; /* Sets paragraph font size */
   font-weight: bold; /* Makes the text bold */
 }
@@ -263,7 +270,7 @@ Dark Button Styling
   margin: 0 0 1em 0; /* Adds bottom margin */
 }
 
-.book a {
+.book a{
   color: #3b3030; /* Sets text color to dark brown */
   padding: 1em 3em; /* Adds padding inside the button */
   background-color: #f5efff; /* Sets background color to light purple */
@@ -272,33 +279,22 @@ Dark Button Styling
 
 .book a:hover {
   background-color: #3b3030; /* Changes background to dark brown on hover */
-  color: #f5efff; /* Changes text color to light purple on hover */
+  color: white; /* Changes text color to white on hover */
   transition: all 1s ease-out; /* Adds a smooth transition effect */
 }
 
 /* FORM SECTION */
-.form_container {
-  margin: 1.5em 0; /* Adds vertical margin */
-  display: flex; /* Enables flexbox layout */
-  text-align: center; /* Centers text */
-  align-items: center; /* Centers items vertically */
-  justify-content: center; /* Centers items horizontally */
-  border-radius: 8px; /* Rounds the edges of the form */
-  padding: 20px; /* Adds space inside the form */
-  background: #f5f5f5; /* Sets background color to light gray */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
-}
-
-.form_container h2 {
-  margin: 1.5em 0; /* Adds vertical spacing */
-  font-size: 1.2em; /* Sets font size */
-}
-
 .form {
+  margin: 1.5em 0; /* Adds vertical margin */
   display: flex; /* Enables flexbox layout */
   flex-direction: column; /* Stacks elements vertically */
   align-items: center; /* Centers elements horizontally */
   justify-content: center; /* Centers elements vertically */
+  text-align: center; /* Centers text */
+  border-radius: 8px; /* Rounds the edges of the form */ 
+  padding: 20px; /* Adds space inside the form */  
+  background: #f5f5f5; /* Sets background color to light gray */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
 
 .form label {
@@ -318,11 +314,16 @@ Dark Button Styling
   font-size: 16px; /* Sets font size */
 }
 
-.form h3 {
-  display: flex; /* Enables flexbox layout */
+.form h1 {
+  text-align: left; /* Aligns text to the left */
+  font-size: 1.5em; /* Sets font size */
+  margin: 1.5em 0; /* Adds vertical spacing */
+}
+
+.form h2 {
   text-align: left; /* Aligns text to the left */
   font-size: 1.2em; /* Sets font size */
-  margin: 1em 0; /* Adds vertical spacing */
+  margin: 1.5em 0; /* Adds vertical spacing */
 }
 
 .form button {
@@ -331,14 +332,13 @@ Dark Button Styling
   padding: 1em 3em; /* Adds padding inside the button */
   border: 1px solid transparent; /* Removes border */
   border-radius: 4em; /* Rounds the button edges */
-  color: #f5efff; /* Sets text color to light purple */
-  font-weight: 600; /* Makes text bold */
+  color: white; /* Sets text color to white*/
   cursor: pointer; /* Changes cursor to pointer */
   transition: 0.5s ease; /* Adds smooth transition effect */
 }
 
 .form button:hover {
-  background-color: #f5efff; /* Changes background to light purple on hover */
+  background-color: #f5f5f5; /* Changes background to light gray on hover */
   color: #e5989b; /* Changes text color to light pink on hover */
   border: 1px solid #3b3030; /* Adds a dark brown border on hover */
 }

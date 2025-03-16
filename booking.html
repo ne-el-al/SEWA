@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking</title>
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!--Css -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
-    <link rel="stylesheet" href="./css/booking.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/tablet.css" />
+  <link rel="stylesheet" href="./css/desktop.css" />
+  <link rel="stylesheet" href="./css/booking.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
   <header>
     <nav id="navbar">
-      <a href="index.html" class="nav-branding" target="_blank"
-        ><img src="./media/logo.webp" alt=""
-      /></a>
+      <a href="index.html" class="nav-branding" target="_blank"><img src="./media/logo.webp" alt="" /></a>
 
       <ul class="nav-menu">
         <li class="nav-item">
@@ -45,140 +48,118 @@
         </li>
       </ul>
 
-      <div class="account">
+      <section class="account">
         <a href="#" class="nav-link user"><i class="fa-regular fa-user"></i></a>
-      </div>
-
+      </section>
       <ul class="logsing-menu">
         <li class="logsing-item"><a href="login.html">Log In</a></li>
         <li class="logsing-item"><a href="signin.html">Sign In</a></li>
       </ul>
-
-      <div class="hamburger">
+      <aside class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-      </div>
+      </aside>
     </nav>
   </header>
-  <body>
-    <!--Booking form-->
-    <main>
-      <div class="booking_container">
-        <aside class="form">
-          <form action="">
-            <h1>Booking</h1>
-            <!-- Prefered date -->
-            <ul>
-              <li class="date">
-                <label for="">Prefered date</label>
-                <input type="date" name="date_book" id="date_book" required />
-              </li>
-              <hr />
-              <!-- Prefered time -->
-              <li class="time">
-                <label for="">Prefered time</label>
-                <input type="time" name="date_book" id="date_book" required />
-              </li>
-              <hr />
-              <!-- Location-->
-              <li class="location">
-                <label for="">Location</label>
-                <select name="location_book" id="location_book" required>
-                  <option value="Dublin">Dublin</option>
-                  <option value="Cork">Cork</option>
-                  <option value="Limerick">Limerick</option>
-                </select>
-              </li>
-              <hr />
-              <!-- Type of photoshoot-->
-              <li class="photoshot">
-                <div class="text"><h4>Type of a photoshoot</h4></div>
-                <div class="checkbox">
-                  <label for="portrait">Portrait</label>
-                  <input
-                    type="checkbox"
-                    name="portrait"
-                    id="portrait"
-                    value="portrait"
-                  />
-                  <label for="family">Family</label>
-                  <input
-                    type="checkbox"
-                    name="family"
-                    id="family"
-                    value="family"
-                  />
-                </div>
-              </li>
-              <hr />
-              <!-- User's message to the photographer -->
-              <li class="message">
-                <label for="book_message">Your message</label>
-                <textarea
-                  name="message"
-                  id="book_message"
-                  style="width: 100%; height: 6em"
-                ></textarea>
-              </li>
-            </ul>
-            <section class="button_area">
-              <p>
-                Your preferred date and time may not fit into my timetable, so I
-                will be in contact with you to confirm your booking date and
-                time
-              </p>
-              <button type="submit">Submit</button>
-            </section>
 
-            <!-- Finish booking button-->
-          </form>
-        </aside>
-      </div>
-    </main>
+  <!--BOOKING FORM-->
+  <main class="booking_container">
+    <aside class="form">
+      <form action="">
+        <h1>Booking</h1>
 
-    <footer>
-      <div id="container">
-        <address class="contact">
-          <h3>Contact Me:</h3>
-          <p>+353 01 234 56 78</p>
-          <p>firs.last@domain.com</p>
-        </address>
-        <aside class="pages">
-          <ul class="footer-menu">
-            <li class="footer-item">
-              <a href="" class="footer-link">About Me</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Service</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Gallery</a>
-            </li>
-            <li class="footer-item">
-              <a href="" class="footer-link">Log in </a>
-            </li>
-          </ul>
-        </aside>
-        <section class="social-media">
-          <h3>Follow me:</h3>
-          <a
-            href="https://www.instagram.com/ivanatumbeva_photo/"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.facebook.com/ivana.tumbeva" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
+        <!-- Prefered date -->
+        <label for="">Prefered date</label>
+        <input type="date" name="date_book" id="date_book" required />
+        <hr />
 
-          <div>
-            <a class="button" href="booking.html">Book</a>
+        <!-- Prefered time -->
+        <label for="">Prefered time</label>
+        <input type="time" name="date_book" id="date_book" required />
+        <hr />
+
+        <!-- Location-->
+        <label for="location_book">Location</label>
+        <select name="location_book" id="location_book" required>
+          <datagroup>
+            <option value="Dublin">Dublin</option>
+            <option value="Cork">Cork</option>
+            <option value="Limerick">Limerick</option>
+          </datagroup>
+        </select>
+        <hr />
+
+        <!-- Type of photoshoot-->
+        <fieldset class="photoshoot">
+          <legend>Type of a photoshoot</legend>
+          <div class="checkbox"> <!-- div for setting option in one line-->
+            <label for="portrait">Portrait</label>
+            <input type="checkbox" name="portrait" id="portrait" value="portrait" />
+            <label for="family">Family</label>
+            <input type="checkbox" name="family" id="family" value="family" />
           </div>
-        </section>
-      </div>
-      <section class="madeby">® Two Turk One Rus, 2025</section>
-    </footer>
+        </fieldset>
+        <hr />
+        <!-- User's message to the photographer -->
+        <label for="book_message">Your message</label>
+        <textarea name="message" id="book_message"></textarea>
+        <hr />
 
-    <script src="./javascript/script.js"></script>
-  </body>
+        <!-- Note before finish booking button -->
+        <p class="note">
+          Your preferred date and time may not fit into my timetable, so I
+          will be in contact with you to confirm your booking date and
+          time
+        </p>
+
+        <!-- Finish booking button-->
+        <section class="button-area">
+          <button type="submit" class="button-area">Finish booking</button>
+        </section>
+      </form>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="container"> <!-- div is for grid-->
+      <address class="contact">
+        <h3>Contact Me:</h3>
+        <p>+353 01 234 56 78</p>
+        <p>first.last@domain.com</p>
+      </address>
+      <article class="pages">
+        <nav class="footer-menu">
+          <li class="footer-item">
+            <a href="about.html" class="footer-link">About Me</a>
+          </li>
+          <li class="footer-item">
+            <a href="service.html" class="footer-link">Service</a>
+          </li>
+          <li class="footer-item">
+            <a href="gallery.html" class="footer-link">Gallery</a>
+          </li>
+          <li class="footer-item">
+            <a href="login.html" class="footer-link">Log in </a>
+          </li>
+        </nav>
+      </article>
+      <article class="footer-links">
+        <h3>Follow me:</h3>
+        <section class="social-media">
+          <a href="https://www.instagram.com/ivanatumbeva_photo/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ivana.tumbeva" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </section>
+        <a class="button_dark" href="booking.html">Book</a>
+      </article>
+    </div>
+    <section class="madeby">® Two Turk One Rus, 2025</section>
+  </footer>
+
+  <!-- Script -->
+  <script src="./javascript/script.js"></script>
+</body>
+
 </html>

@@ -43,6 +43,15 @@ hr {
   width: 50%; /* Sets label width */
 }
 
+/* This styling allows form legend be placed in one column and radio buttons in the other */
+fieldset {
+  display: contents;
+}
+
+fieldset.photoshoot > legend {
+  font-weight: bold; /* Makes legend same as other form labels*/
+}
+
 .photoshot {
   display: flex; /* Enables flexbox */
   flex-direction: column; /* Stacks elements vertically */
@@ -54,7 +63,13 @@ hr {
   justify-content: baseline; /* Aligns items to the baseline */
 }
 
-.button_area {
+textarea {
+  width: 100%; /* Sets width to the full size of the page*/
+  height: 6em; /* Sets bigger height */
+  border-color: #e5989b; /* Sets border color to pink */
+}
+
+.button-area {
   display: flex; /* Enables flexbox */
   flex-direction: column; /* Stacks buttons vertically */
   align-items: center; /* Centers buttons horizontally */
@@ -64,6 +79,10 @@ button {
   width: 70%; /* Sets button width */
 }
 
-p {
+.note {
+  background-color: #e5989b; /* Sets background color to pink*/
+  opacity: 0.6; /* Sets opacity to 60% */
+  padding: 1em; /* Adds padding inside */
+  border-radius: 1rem; /* Make corners rounder */
   margin: 1em 0; /* Adds vertical spacing */
 }
