@@ -1,137 +1,152 @@
 main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: baseline;
-  background: #f4f4f4;
+  width: 100%; /* Full width of the page */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
+  justify-content: flex-start; /* Aligns content at the top */
+  align-items: baseline; /* Aligns content to the text baseline */
+  background: #f4f4f4; /* Light gray background */
 }
 
 .login_container {
-  font-size: 1.2em;
-  width: 95%;
-  margin: 0.5em auto;
-  padding: 2em;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
+  font-size: 1.2em; /* Sets text size */
+  width: 95%; /* Takes up 95% of available width */
+  margin: 0.5em auto; /* Centers container with top-bottom margin */
+  padding: 2em; /* Adds space inside */
+  background: white; /* White background */
+  border-radius: 10px; /* Rounds corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  text-align: center; /* Centers text */
+  animation: fadeIn 1s ease-in-out; /* Adds fade-in animation */
 }
 
 h2 {
-  margin-bottom: 1em;
-  font-size: 2.5em;
-  color: #8ff8a8;
-  text-shadow: 2px 2px black;
+  margin-bottom: 1em; /* Adds bottom spacing */
+  font-size: 2.5em; /* Sets heading size */
+  color: #8ff8a8; /* Light green text */
+  text-shadow: 2px 2px black; /* Black text shadow */
 }
+
 h3 {
-  margin: 1em 0;
+  margin: 1em 0; /* Adds vertical spacing */
 }
+
 input {
-  width: 100%;
-  padding: 1em;
-  margin: 1em auto;
-  border: none;
-  border-bottom: 1px solid #e5989b;
-  outline: none;
-  background-color: #faf9f9;
-  border-radius: 0.5em;
+  width: 100%; /* Full width input */
+  padding: 1em; /* Adds padding */
+  margin: 1em auto; /* Centers input with margin */
+  border: none; /* Removes border */
+  border-bottom: 1px solid #e5989b; /* Adds pink bottom border */
+  outline: none; /* Removes outline */
+  background-color: #faf9f9; /* Light background */
+  border-radius: 0.5em; /* Rounds corners */
 }
+
 .input-place {
-  position: relative;
+  position: relative; /* Allows absolute positioning inside */
 }
+
 .input-place i {
-  position: absolute;
-  top: 50%;
-  right: 2em;
-  color: #e5989b;
-  transform: translateY(-50%);
+  position: absolute; /* Positions icon inside input field */
+  top: 50%; /* Moves icon to the middle */
+  right: 2em; /* Moves icon to the right */
+  color: #e5989b; /* Sets icon color */
+  transform: translateY(-50%); /* Aligns icon vertically */
 }
 
 .socialmedia {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-evenly; /* Spreads items evenly */
+  flex-direction: row; /* Aligns items in a row */
 }
+
 .socialmedia li:nth-child(1) {
-  margin: 1em 0;
-  padding: 0.6em;
-  border: 1px solid #e5989b;
-  border-radius: 50%;
-  color: #e5989b;
+  margin: 1em 0; /* Adds vertical spacing */
+  padding: 0.6em; /* Adds padding */
+  border: 1px solid #e5989b; /* Pink border */
+  border-radius: 50%; /* Circular shape */
+  color: #e5989b; /* Pink icon color */
 }
+
 .socialmedia li:nth-child(2) {
-  margin: 1em 0;
-  padding: 0.6em 0.8em;
-  border: 1px solid #e5989b;
-  border-radius: 50%;
-  color: #e5989b;
+  margin: 1em 0; /* Adds vertical spacing */
+  padding: 0.6em 0.8em; /* Adds padding */
+  border: 1px solid #e5989b; /* Pink border */
+  border-radius: 50%; /* Circular shape */
+  color: #e5989b; /* Pink icon color */
 }
+
 .socialmedia i {
-  font-size: 1.4em;
-  cursor: pointer;
+  font-size: 1.4em; /* Sets icon size */
+  cursor: pointer; /* Changes cursor to pointer */
 }
+
 button {
-  font-size: 1.1em;
-  width: 100%;
-  padding: 10px;
-  margin: 0.6em 0;
-  background: #e5989b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 1.1em; /* Sets button text size */
+  width: 100%; /* Full width button */
+  padding: 10px; /* Adds padding */
+  margin: 0.6em 0; /* Adds vertical spacing */
+  background: #e5989b; /* Pink background */
+  color: white; /* White text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounds corners */
+  cursor: pointer; /* Changes cursor to pointer */
 }
 
 .side_container {
-  background-color: #f5efff;
-  display: flex;
-  width: 95%;
-  border-radius: 1em;
-  margin: 3em auto;
-  padding: 5em 0;
-  align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  flex-direction: column;
-  justify-content: center;
-  animation: fadeOut 1s ease-in-out;
+  background-color: #f5efff; /* Light purple background */
+  display: flex; /* Enables flexbox */
+  width: 95%; /* Takes up 95% of available width */
+  border-radius: 1em; /* Rounds corners */
+  margin: 3em auto; /* Centers container with spacing */
+  padding: 5em 0; /* Adds vertical padding */
+  align-items: center; /* Centers items vertically */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  flex-direction: column; /* Stacks child elements vertically */
+  justify-content: center; /* Centers items horizontally */
+  animation: fadeOut 1s ease-in-out; /* Adds fade-out animation */
 }
+
 .side_container h2 {
-  font-size: 1.8em;
+  font-size: 1.8em; /* Sets heading size */
 }
+
 .side_container p {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 1.5em;
+  font-weight: bold; /* Makes text bold */
+  font-size: 1.2em; /* Sets font size */
+  margin: 1.5em; /* Adds spacing */
 }
+
 .side_container .button {
-  font-size: 1.1em;
-  width: 70%;
-  border-radius: 1em;
-  text-align: center;
-  color: white;
-  padding: 0.6em 0.8em;
-  background-color: #e5989b;
+  font-size: 1.1em; /* Sets button text size */
+  width: 70%; /* Button takes up 70% of container width */
+  border-radius: 1em; /* Rounds button edges */
+  text-align: center; /* Centers text */
+  color: white; /* White text */
+  padding: 0.6em 0.8em; /* Adds padding */
+  background-color: #e5989b; /* Pink background */
 }
+
+/* FADE-OUT ANIMATION */
 @keyframes fadeOut {
   from {
-    opacity: 0;
-    transform: translateY(50%);
+    opacity: 0; /* Starts fully transparent */
+    transform: translateY(50%); /* Moves element down */
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Becomes fully visible */
+    transform: translateY(0); /* Moves element back to position */
   }
 }
+
+/* FADE-IN ANIMATION */
 @keyframes fadeIn {
   from {
-    opacity: 0;
-    transform: translateY(-50%);
+    opacity: 0; /* Starts fully transparent */
+    transform: translateY(-50%); /* Moves element up */
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Becomes fully visible */
+    transform: translateY(0); /* Moves element back to position */
   }
 }

@@ -1,106 +1,113 @@
-
 #navbar {
-  
-  min-height: 5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2em;
-  box-shadow: 1px 1px #795757;
-  background-color: #d5c8b0;
+  min-height: 5em; /* Sets minimum height of the navbar */
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Positions items at both ends */
+  align-items: center; /* Centers items vertically */
+  padding: 0 2em; /* Adds horizontal padding */
+  box-shadow: 1px 1px #795757; /* Adds a slight shadow effect */
+  background-color: #d5c8b0; /* Sets background color */
 }
+
 #navbar img {
-  width: 5em;
-  box-shadow: #795757 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  margin-top: 8px;
-  border-radius: 100%;
+  width: 5em; /* Sets logo size */
+  box-shadow: #795757 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Adds shadow effect */
+  margin-top: 8px; /* Moves the image slightly downward */
+  border-radius: 100%; /* Makes the image circular */
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 3em;
+  display: flex; /* Enables flexbox */
+  justify-content: space-evenly; /* Distributes menu items evenly */
+  align-items: center; /* Centers items vertically */
+  gap: 3em; /* Adds spacing between menu items */
 }
+
 .nav-branding {
-  font-size: 2em;
+  font-size: 2em; /* Sets branding text size */
 }
 
 .nav-link {
-  transition: 0.7s ease;
-  color: #795757;
-  font-size: 1.2em;
+  transition: 0.7s ease; /* Adds smooth transition effect */
+  color: #795757; /* Sets text color */
+  font-size: 1.2em; /* Sets font size */
 }
 
 .account i {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Sets icon size */
 }
+
 .hamburger {
-  display: none;
-  cursor: pointer;
+  display: none; /* Hides the hamburger menu by default */
+  cursor: pointer; /* Changes cursor to pointer */
 }
+
 .bar {
-  display: block;
-  width: 2rem;
-  height: 0.18rem;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #795757;
+  display: block; /* Makes each bar a block element */
+  width: 2rem; /* Sets width of bars */
+  height: 0.18rem; /* Sets height of bars */
+  margin: 5px auto; /* Centers bars with spacing */
+  transition: all 0.3s ease-in-out; /* Adds smooth transition */
+  background-color: #795757; /* Sets bar color */
 }
 
 .logsing-menu {
-  position: fixed;
-  right: 2%;
-  top: -50%;
-  text-align: center;
-  width: 10em;
-  z-index: 999;
-  transition: 1s;
+  position: fixed; /* Fixes position on the screen */
+  right: 2%; /* Positions it 2% from the right */
+  top: -50%; /* Initially hidden above the screen */
+  text-align: center; /* Centers text inside */
+  width: 10em; /* Sets width */
+  z-index: 999; /* Keeps it above other elements */
+  transition: 1s; /* Smooth transition effect */
 }
 
 .logsing-menu.active {
-  top: 6em;
-  transition: 1s ease;
-}
-.logsing-item {
-  padding: 0.7em;
-  margin: 0.2em;
-  background-color: #d5c8b0;
+  top: 6em; /* Moves the menu down when active */
+  transition: 1s ease; /* Adds smooth effect */
 }
 
+.logsing-item {
+  padding: 0.7em; /* Adds padding inside */
+  margin: 0.2em; /* Adds spacing between items */
+  background-color: #d5c8b0; /* Sets background color */
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: block; /* Shows the hamburger menu */
   }
 
   .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Hides the middle bar */
   }
+
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(0.7rem) rotate(45deg);
+    transform: translateY(0.7rem) rotate(45deg); /* Rotates first bar */
   }
+
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-0.7rem) rotate(-45deg);
+    transform: translateY(-0.7rem) rotate(-45deg); /* Rotates third bar */
   }
+
   .nav-menu {
-    font-size: 1.2em;
-    z-index: 999;
-    position: fixed;
-    left: -100%;
-    top: 6em;
-    gap: 0;
-    flex-direction: column;
-    background-color: #d5c8b0;
-    width: 100%;
-    text-align: center;
-    transition: 1s;
+    font-size: 1.2em; /* Increases font size */
+    z-index: 999; /* Keeps it on top */
+    position: fixed; /* Fixes position */
+    left: -100%; /* Hides menu off-screen */
+    top: 6em; /* Positions menu below navbar */
+    gap: 0; /* Removes extra spacing */
+    flex-direction: column; /* Stacks items vertically */
+    background-color: #d5c8b0; /* Sets background color */
+    width: 100%; /* Makes it full width */
+    text-align: center; /* Centers text */
+    transition: 1s; /* Smooth transition */
   }
+
   .nav-item {
-    margin: 1em 0;
+    margin: 1em 0; /* Adds spacing between items */
   }
 
   .nav-menu.active {
-    left: 0;
+    left: 0; /* Moves menu into view when active */
   }
 }

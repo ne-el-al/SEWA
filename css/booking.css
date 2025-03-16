@@ -1,61 +1,69 @@
 main {
-  height: 100%;
-  display: flex;
+  height: 100%; /* Full height of the page */
+  display: flex; /* Enables flexbox layout */
 }
-.booking_container {
-  display: flex;
 
-  margin: 2em auto;
-  flex-direction: column;
-  align-items: center;
-  padding: 3em;
-  justify-content: center;
+.booking_container {
+  display: flex; /* Enables flexbox layout */
+  margin: 2em auto; /* Centers the container with margin */
+  flex-direction: column; /* Stacks child elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  padding: 3em; /* Adds padding inside */
+  justify-content: center; /* Centers elements vertically */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; /* Adds shadow effect */
 }
 
 hr {
-  margin: 1em 0;
-  color: #e5989b;
-  border: 1px solid #e5989b;
-  opacity: 0.2;
+  margin: 1em 0; /* Adds spacing above and below */
+  color: #e5989b; /* Sets horizontal rule color */
+  border: 1px solid #e5989b; /* Adds border */
+  opacity: 0.2; /* Reduces visibility */
 }
+
 .booking_container h1 {
-  color: #e5989b;
-  text-align: center;
-  font-size: 2.6em;
-  text-shadow: 1px 1px black;
-  letter-spacing: 0.4em;
-  margin: 0.6em;
+  color: #e5989b; /* Sets text color to pink */
+  text-align: center; /* Centers the heading */
+  font-size: 2.6em; /* Increases font size */
+  text-shadow: 1px 1px black; /* Adds black text shadow */
+  letter-spacing: 0.4em; /* Increases space between letters */
+  margin: 0.6em; /* Adds spacing */
 }
+
 .form {
-  margin: auto;
+  margin: auto; /* Centers the form */
 }
+
 .location {
-  display: flex;
-  justify-content: baseline;
+  display: flex; /* Enables flexbox */
+  justify-content: baseline; /* Aligns items to the baseline */
 }
+
 .location label {
-  width: 50%;
+  width: 50%; /* Sets label width */
 }
+
 .photoshot {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks elements vertically */
 }
+
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Centers items vertically */
+  justify-content: baseline; /* Aligns items to the baseline */
 }
 
 .button_area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks buttons vertically */
+  align-items: center; /* Centers buttons horizontally */
 }
+
 button {
-  width: 70%;
+  width: 70%; /* Sets button width */
 }
+
 p {
-  margin: 1em 0;
+  margin: 1em 0; /* Adds vertical spacing */
 }

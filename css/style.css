@@ -1,15 +1,45 @@
+/* 
+======================================
+Importing Google Fonts
+======================================
+This line imports fonts from Google Fonts. 
+- "Big Shoulders Inline" is used for headings.
+- "Roboto" is used for body text in different font weights.
+*/
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* 
+======================================
+Global Reset (Normalize Default Styles)
+======================================
+- Removes default padding and margin from all elements.
+- Sets box-sizing to "border-box" to make padding and border included in element dimensions.
+- Sets the default font size to 1rem (16px by default).
+*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 1rem;
 }
+
+/* 
+======================================
+Header Styling
+======================================
+- Sets the background color of the header to dark gray.
+*/
 header {
   background-color: #202523;
 }
 
+/* 
+======================================
+List & Link Styles
+======================================
+- Removes bullet points from lists.
+- Removes underlines from links and sets their color.
+*/
 li {
   list-style: none;
 }
@@ -18,6 +48,13 @@ a {
   color: #795757;
 }
 
+/* 
+======================================
+Body & HTML Structure
+======================================
+- Ensures the body takes full height of the screen.
+- Uses flexbox to arrange content in a column.
+*/
 html,
 body {
   height: 100%;
@@ -25,6 +62,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* 
+======================================
+Dark Button Styling
+======================================
+- Gives the button a dark background with light-colored text.
+- Adds padding and rounded borders.
+*/
 .button_dark {
   background-color: #3b3030;
   color: #fff0d1;
@@ -35,235 +80,263 @@ body {
 
 /*######### HOME PAGE #########*/
 /* SLIDER SIDE */
+/*  */
 .card_list .card_item {
-  background: rgb(22, 21, 21, 0.2);
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  background: rgb(
+    22,
+    21,
+    21,
+    0.2
+  ); /* Dark gray background with 20% transparency */
+  padding: 2em; /* Adds space inside the container */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  justify-content: center; /* Centers elements vertically */
+  width: 100%; /* Fills the available width */
 }
+
 .card_list .image {
-  width: 20em;
-  border-radius: 2em;
+  width: 20em; /* Sets image width */
+
+  border-radius: 2em; /* Rounds image corners */
 }
+
 .swiper-slide {
-  height: auto;
+  height: auto; /* Adjusts height based on content */
 }
 
 /* ABOUT SIDE */
 #about {
-  margin: 2em auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-sizing: border-box;
+  margin: 2em auto; /* Adds vertical margin and centers horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-around; /* Spreads elements evenly with space between */
+  align-items: center; /* Aligns elements vertically at the center */
+  box-sizing: border-box; /* Includes padding and border in the total size */
 }
+
 #about img {
-  width: 12em;
-  margin: 0 1em;
+  width: 12em; /* Sets image width */
+  margin: 0 1em; /* Adds horizontal spacing */
 }
 
 .about_her {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: baseline;
+  width: 50%; /* Takes up 50% of the parent container */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
+  justify-content: baseline; /* Aligns content to the baseline */
+  align-items: baseline; /* Aligns items to the text baseline */
 }
+
 .about_her h1 {
-  font-size: 2em;
-  margin: 0 auto 0.5em auto;
+  font-size: 2em; /* Sets heading size */
+  margin: 0 auto 0.5em auto; /* Centers horizontally with bottom spacing */
 }
 
 .about_her span {
-  font-size: 1.5em;
-  color: #8ff8a8;
-  text-shadow: 2px 2px #3b3030;
-  margin-right: 1em;
+  font-size: 1.5em; /* Sets text size */
+  color: #8ff8a8; /* Applies green color */
+  text-shadow: 2px 2px #3b3030; /* Adds a dark shadow */
+  margin-right: 1em; /* Adds spacing to the right */
 }
 
 .about_her p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.2em; /* Adds bottom spacing */
 }
 
 /* HOME GALLERY SIDE */
 
 .home_gallery_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  justify-content: center;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  text-align: center; /* Centers text inside the container */
+  box-sizing: border-box; /* Includes padding and border in total size */
+  justify-content: center; /* Centers elements vertically */
 }
+
 .home_gallery_container h2 {
-  font-size: 2em;
-  margin: 0 0 1em 0;
-  color: #8ff8a8;
-  text-shadow: 2px 2px #3b3030;
-  letter-spacing: 0.2em;
+  font-size: 2em; /* Sets heading size */
+  margin: 0 0 1em 0; /* Adds bottom spacing */
+  color: #8ff8a8; /* Applies green color */
+  text-shadow: 2px 2px #3b3030; /* Adds dark shadow effect */
+  letter-spacing: 0.2em; /* Increases space between letters */
 }
+
 .portrait {
-  margin-bottom: 1em;
-  width: 100%;
-  padding: 1.2em 0 1.2em 0;
-  background-color: #fff0d1;
+  margin-bottom: 1em; /* Adds spacing below */
+  width: 100%; /* Takes full width of the parent */
+  padding: 1.2em 0 1.2em 0; /* Adds vertical padding */
+  background-color: #fff0d1; /* Light beige background */
 }
 
 .family_photo {
-  width: 100%;
-  padding: 1.2em 0 1.2em 0;
-  background-color: #f5efff;
-  margin-bottom: 1em;
+  width: 100%; /* Takes full width of the parent */
+  padding: 1.2em 0 1.2em 0; /* Adds vertical padding */
+  background-color: #f5efff; /* Light purple background */
+  margin-bottom: 1em; /* Adds spacing below */
 }
+
 .home_gallery_container .tablet {
-  display: none;
+  display: none; /* Hides tablet version by default */
 }
+
 .home_gallery_container .desktop {
-  display: none;
+  display: none; /* Hides desktop version by default */
 }
 
 .home_gallery_container img {
-  width: 12em;
-  height: 260px;
-  margin: 5px;
+  width: 12em; /* Sets image width */
+  height: 260px; /* Sets image height */
+  margin: 5px; /* Adds spacing around images */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Adds shadow effect */
 }
 
 /* PROCESS */
 #process {
-  margin-bottom: 1em;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  margin-bottom: 1em; /* Adds space below the section */
+  box-sizing: border-box; /* Ensures padding and border are included in the total size */
+  flex-wrap: wrap; /* Allows items to wrap to a new line if needed */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-evenly; /* Evenly distributes items with equal spacing */
 }
+
 #process h1 {
-  font-size: 2em;
-  margin: 0.7em 0;
+  font-size: 2em; /* Sets the font size for the heading */
+  margin: 0.7em 0; /* Adds vertical spacing */
 }
+
 #process i {
-  font-size: 2em;
+  font-size: 2em; /* Sets the icon size */
 }
 
 .process_container {
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
-  flex-wrap: wrap;
+  display: flex; /* Enables flexbox layout */
+  justify-content: flex-start; /* Aligns content to the left */
+  text-align: center; /* Centers text inside the container */
+  flex-wrap: wrap; /* Allows items to wrap if they don’t fit */
 }
+
 .process_container i {
-  margin-bottom: 0.5em;
-  color: #e5989b;
-  font-size: 2em;
+  margin-bottom: 0.5em; /* Adds space below icons */
+  color: #e5989b; /* Sets icon color */
+  font-size: 2em; /* Sets icon size */
 }
 
 .process_container .process {
-  width: 50%;
-  margin: 1em 0;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+  width: 50%; /* Each item takes up 50% of the parent container */
+  margin: 1em 0; /* Adds vertical spacing */
+  position: relative; /* Allows for absolute positioning inside */
+  display: inline-block; /* Ensures inline-level display */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
+
 .tooltip-text {
-  visibility: hidden;
-  width: 20em;
-  color: #3b3030;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  visibility: hidden; /* Hides the tooltip by default */
+  width: 20em; /* Sets tooltip width */
+  color: #3b3030; /* Sets text color */
+  left: 0; /* Positions it at the left */
+  opacity: 0; /* Makes it fully transparent */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
 }
+
 .process:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+  visibility: visible; /* Makes the tooltip visible */
+  opacity: 1; /* Fully visible when hovered */
 }
 
 .process p {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.2em; /* Sets paragraph font size */
+  font-weight: bold; /* Makes the text bold */
 }
 
 /* BOOK BUTTON */
 .book {
-  padding: 2em;
-  background-color: #e5989b;
-  text-align: center;
-  margin: 0 0 1em 0;
+  padding: 2em; /* Adds space inside the book button container */
+  background-color: #e5989b; /* Sets background color to light pink */
+  text-align: center; /* Centers text and elements inside */
+  margin: 0 0 1em 0; /* Adds bottom margin */
 }
+
 .book a {
-  color: #3b3030;
-  padding: 1em 3em;
-  background-color: #f5efff;
-  border-radius: 2em;
+  color: #3b3030; /* Sets text color to dark brown */
+  padding: 1em 3em; /* Adds padding inside the button */
+  background-color: #f5efff; /* Sets background color to light purple */
+  border-radius: 2em; /* Rounds the button edges */
 }
+
 .book a:hover {
-  background-color: #3b3030;
-  color: #f5efff;
-  transition: all 1s ease-out;
+  background-color: #3b3030; /* Changes background to dark brown on hover */
+  color: #f5efff; /* Changes text color to light purple on hover */
+  transition: all 1s ease-out; /* Adds a smooth transition effect */
 }
 
 /* FORM SECTION */
 .form_container {
-  margin: 1.5em 0;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  padding: 20px;
-  background: #f5f5f5;
+  margin: 1.5em 0; /* Adds vertical margin */
+  display: flex; /* Enables flexbox layout */
+  text-align: center; /* Centers text */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  border-radius: 8px; /* Rounds the edges of the form */
+  padding: 20px; /* Adds space inside the form */
+  background: #f5f5f5; /* Sets background color to light gray */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
 .form_container h2 {
-  margin: 1.5em 0;
-  font-size: 1.2em;
+  margin: 1.5em 0; /* Adds vertical spacing */
+  font-size: 1.2em; /* Sets font size */
 }
+
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  justify-content: center; /* Centers elements vertically */
 }
+
 .form label {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px;
+  display: block; /* Makes the label appear on a new line */
+  font-weight: bold; /* Makes the label text bold */
+  margin-top: 10px; /* Adds space above the label */
 }
+
 .form input {
-  width: 100%;
-  padding: 0.4em;
-  margin-top: 5px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #e5989b;
-  border-radius: 0.5em;
-  font-size: 16px;
+  width: 100%; /* Makes input fields take full width */
+  padding: 0.4em; /* Adds padding inside inputs */
+  margin-top: 5px; /* Adds space above the input field */
+  border: none; /* Removes default border */
+  outline: none; /* Removes default outline */
+  border-bottom: 1px solid #e5989b; /* Adds bottom border in light pink */
+  border-radius: 0.5em; /* Rounds the corners of the input */
+  font-size: 16px; /* Sets font size */
 }
+
 .form h3 {
-  display: flex;
-  text-align: left;
-  font-size: 1.2em;
-  margin: 1em 0;
+  display: flex; /* Enables flexbox layout */
+  text-align: left; /* Aligns text to the left */
+  font-size: 1.2em; /* Sets font size */
+  margin: 1em 0; /* Adds vertical spacing */
 }
+
 .form button {
-  margin: 1em 0;
-  background-color: #e5989b;
-  padding: 1em 3em;
-  border: 1px solid transparent;
-  border-radius: 4em;
-  color: #f5efff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.5s ease;
+  margin: 1em 0; /* Adds vertical spacing */
+  background-color: #e5989b; /* Sets background color to light pink */
+  padding: 1em 3em; /* Adds padding inside the button */
+  border: 1px solid transparent; /* Removes border */
+  border-radius: 4em; /* Rounds the button edges */
+  color: #f5efff; /* Sets text color to light purple */
+  font-weight: 600; /* Makes text bold */
+  cursor: pointer; /* Changes cursor to pointer */
+  transition: 0.5s ease; /* Adds smooth transition effect */
 }
+
 .form button:hover {
-  background-color: #f5efff;
-  color: #e5989b;
-  border: 1px solid #3b3030;
+  background-color: #f5efff; /* Changes background to light purple on hover */
+  color: #e5989b; /* Changes text color to light pink on hover */
+  border: 1px solid #3b3030; /* Adds a dark brown border on hover */
 }

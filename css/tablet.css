@@ -1,33 +1,41 @@
 @media (min-width: 768px) {
+  /* Applies styles when screen width is 768px or larger */
+
   body {
-    font-size: 1.6em;
+    font-size: 1.6em; /* Increases font size for better readability */
   }
+
   p,
   a {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjusts paragraph and link text size */
   }
+
   h2 {
-    font-size: 1.6em;
+    font-size: 1.8em; /* Increases heading size */
   }
 
   /* ABOUT */
   #about img {
-    width: 16em;
+    width: 16em; /* Enlarges images in the about section */
   }
 
   .home_gallery_container .tablet {
-    display: inline;
+    display: inline; /* Makes tablet version of the gallery visible */
   }
+
   /* Footer */
   aside .footer-menu {
-    display: flex;
+    display: flex; /* Displays footer menu items in a row */
   }
+
   aside .footer-item {
-    margin: 1em 1.5em;
+    margin: 1em 1.5em; /* Adds spacing between footer items */
   }
+
+  /* LOG IN / SIGN IN */
   .login_container,
   .side_container,
   .signin_container {
-    width: 60%;
+    width: 60%; /* Sets container width to 60% of the screen */
   }
 }
