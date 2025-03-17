@@ -25,7 +25,7 @@ hr {
   color: #e5989b; /* Sets text color to pink */
   text-align: center; /* Centers the heading */
   font-size: 2.6em; /* Increases font size */
-  text-shadow: 1px 1px black; /* Adds black text shadow */
+  text-shadow: 2px 2px black; /* Adds black text shadow */
   letter-spacing: 0.4em; /* Increases space between letters */
   margin: 0.6em; /* Adds spacing */
 }

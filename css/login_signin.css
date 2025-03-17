@@ -47,6 +47,10 @@ input {
   transform: translateY(-50%); /* Aligns icon vertically */
 }
 
+#password {
+  color: #e5989b;
+}
+
 .socialmedia {
   display: flex; /* Enables flexbox */
   align-items: center; /* Centers items vertically */
