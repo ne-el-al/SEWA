@@ -27,6 +27,9 @@
   #about img {
     width: 18em; /* Increases image size */
   }
+  .about_her h1 {
+    font-size: 2em; /*Font size*/
+  }
 
   .about_her {
     width: 40%; /* Reduces width to allow better spacing */
@@ -88,9 +91,8 @@
     animation: all 2s ease-in; /* Adds animation effect */
   }
 
-.auth_container,
-.side_container
-   {
+  .auth_container,
+  .side_container {
     width: 40%; /* Reduces width for better alignment */
     margin: 2em 0.5em; /* Adds spacing */
     padding: 1em; /* Adds padding inside */

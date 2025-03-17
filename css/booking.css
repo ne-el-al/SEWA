@@ -1,14 +1,8 @@
-main {
-  height: 100%; /* Full height of the page */
-  display: flex; /* Enables flexbox layout */
-}
-
 .booking_container {
-  display: flex; /* Enables flexbox layout */
-  margin: 2em auto; /* Centers the container with margin */
+  display: flex; /* Enables flexbox layout */ /* Centers the container with margin */
   flex-direction: column; /* Stacks child elements vertically */
   align-items: center; /* Centers elements horizontally */
-  padding: 3em; /* Adds padding inside */
+  /* Adds padding inside */
   justify-content: center; /* Centers elements vertically */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; /* Adds shadow effect */
