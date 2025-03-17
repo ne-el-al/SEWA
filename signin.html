@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
   <!--Css -->
-  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/login_signin.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/navbar.css" />
   <link rel="stylesheet" href="./css/footer.css" />
@@ -27,9 +27,12 @@
 <body>
   <!-- NAVBAR -->
   <header>
+    <!-- Navigation menu -->
     <nav id="navbar">
+      <!-- Site logo leading to main (index) page -->
       <a href="index.html" class="nav-branding" target="_blank"><img src="./media/logo.webp" alt="" /></a>
 
+      <!-- Menu links to other website pages -->
       <ul class="nav-menu">
         <li class="nav-item">
           <a href="index.html" class="nav-link">Home</a>
@@ -48,6 +51,7 @@
         </li>
       </ul>
 
+      <!-- Button leading to login or sign in page -->
       <section class="account">
         <a href="#" class="nav-link user"><i class="fa-regular fa-user"></i></a>
       </section>
@@ -55,6 +59,7 @@
         <li class="logsing-item"><a href="login.html">Log In</a></li>
         <li class="logsing-item"><a href="signin.html">Sign In</a></li>
       </ul>
+      <!-- Hamburger menu section for shorter screens -->
       <aside class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -65,17 +70,20 @@
 
   <!-- MAIN SECTION -->
   <main id="signin_container">
+    <!-- Section leading to login page -->
     <aside class="side_container">
       <h1>Hello , Welcome to Ivana's World!</h1>
       <p>Already have an account?</p>
       <a href="login.html"><button>Log In</button></a>
     </aside>
+    <!-- Sign in form -->
     <section class="auth_container">
       <form>
         <h1>Sing In</h1>
+        <!-- Input fields -->
         <ul>
           <li class="input-place">
-            <input type="text" placeholder="UserName" required />
+            <input type="text" placeholder="UserName" required minlength="2" maxlength="15"/>
             <i class="fa-solid fa-user"></i>
             </i>
           </li>
@@ -84,16 +92,26 @@
             <i class="fa-solid fa-envelope"></i>
           </li>
           <li class="input-place">
-            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
             <i class="fa-solid fa-lock"></i>
+            
           </li>
-          <li>
+          <li id="password"><p>Your password should:
+              <ol>
+                <li>Consist of 8 symbols</li>
+                <li>Have at least one uppercase letter</li>
+                <li>Have at least one lowercase letter</li>
+                <li>Have at least one digit</li>
+              </ol>
+            </p>
             <a href="#">Forgot your Password?</a>
           </li>
         </ul>
-        <button>Sign in</button>
+        <!-- Sign in button -->
+        <button type="submit">Sign in</button>
       </form>
 
+      <!-- Alternative sign in with social media accounts (Google, Facebook) -->
       <h1>Sign in with Social Media</h1>
       <section class="socialmedia">
         <i class="fa-brands fa-google"></i>
@@ -105,11 +123,13 @@
   <!-- FOOTER -->
   <footer>
     <div id="container"> <!-- div is for grid-->
+      <!-- Contact information of the photographer -->
       <address class="contact">
         <h3>Contact Me:</h3>
         <p>+353 01 234 56 78</p>
         <p>first.last@domain.com</p>
       </address>
+      <!-- Navigation menu copying the top navigation -->
       <article class="pages">
         <nav class="footer-menu">
           <li class="footer-item">
@@ -126,6 +146,7 @@
           </li>
         </nav>
       </article>
+      <!-- Social media links -->
       <article class="footer-links">
         <h3>Follow me:</h3>
         <section class="social-media">
@@ -133,10 +154,12 @@
               class="fa-brands fa-instagram"></i></a>
           <a href="https://www.facebook.com/ivana.tumbeva" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </section>
+        <!-- Book button -->
         <a class="button_dark" href="booking.html">Book</a>
       </article>
     </div>
-    <section class="madeby">® Two Turk One Rus, 2025</section>
+    <!-- Authors of this website -->
+    <section class="madeby">® Group K (Elvira Negreeva, Ibrahim Cab Onder, Ibrahim Gurses), Griffith College, 2025</section>
   </footer>
 
   <!-- Script -->
