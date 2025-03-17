@@ -116,7 +116,7 @@ Dark Button Styling
 }
 
 #about img {
-  width: 12em; /* Sets image width */
+  width: 10em; /* Sets image width */
   margin: 0 1em; /* Adds horizontal spacing */
 }
 
@@ -129,7 +129,7 @@ Dark Button Styling
 }
 
 .about_her h1 {
-  font-size: 2em; /* Sets heading size */
+  font-size: 1.3em; /* Sets heading size */
   margin: 0 auto 0.5em auto; /* Centers horizontally with bottom spacing */
 }
 
@@ -270,7 +270,7 @@ i.fa-star {
   margin: 0 0 1em 0; /* Adds bottom margin */
 }
 
-.book a{
+.book a {
   color: #3b3030; /* Sets text color to dark brown */
   padding: 1em 3em; /* Adds padding inside the button */
   background-color: #f5efff; /* Sets background color to light purple */
@@ -291,8 +291,8 @@ i.fa-star {
   align-items: center; /* Centers elements horizontally */
   justify-content: center; /* Centers elements vertically */
   text-align: center; /* Centers text */
-  border-radius: 8px; /* Rounds the edges of the form */ 
-  padding: 20px; /* Adds space inside the form */  
+  border-radius: 8px; /* Rounds the edges of the form */
+  padding: 20px; /* Adds space inside the form */
   background: #f5f5f5; /* Sets background color to light gray */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
