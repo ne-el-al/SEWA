@@ -112,8 +112,6 @@ button {
   margin: 1.5em; /* Adds spacing */
 }
 
-
-
 /* FADE-OUT ANIMATION */
 @keyframes fadeOut {
   from {
